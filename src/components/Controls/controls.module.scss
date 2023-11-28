@@ -1,0 +1,30 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.playButton {
+  scale: 1.2;
+}
+.skipButton {
+  scale: 1.1;
+}
+.replayButton {
+  display: none !important;
+}
+.emotionalButton {
+  scale: 0.9 !important;
+}
+
+@media (max-width: 820px) {
+  .replayButton {
+    display: flex !important;
+  }
+}
+@media (max-width: 411px) {
+  .replayButton {
+    display: none !important;
+  }
+}

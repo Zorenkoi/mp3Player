@@ -1,0 +1,57 @@
+.track {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+
+  &b {
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  &p {
+    letter-spacing: 1px;
+    color: #9e9e9e;
+    font-size: 15px;
+  }
+
+  @media (max-width: 340px) {
+    gap: 10px;
+  }
+}
+
+.playButton {
+  @media (max-width: 400px) {
+    display: none !important;
+  }
+}
+
+.credits {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  b {
+    cursor: pointer;
+  }
+}
+
+.preview {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.duration {
+  @media (max-width: 470px) {
+    display: none;
+  }
+}
+
+.playing * {
+  color: #9340fe !important;
+}
