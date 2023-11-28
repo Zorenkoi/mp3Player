@@ -9,7 +9,7 @@ import s from "./playBar.module.scss";
 
 const PlayBar = () => {
   return (
-    <div className={s.playbar}>
+    <div className={s.playbar} translate="no">
       <div className={s.container}>
         <div className={s.playbarLeft}>
           <TrackInfo />

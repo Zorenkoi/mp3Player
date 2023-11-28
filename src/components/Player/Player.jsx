@@ -9,7 +9,7 @@ import s from "./player.module.scss";
 
 const Player = () => {
   return (
-    <div className={s.playerContainer}>
+    <div className={s.playerContainer} translate="no">
       <div className={s.player}>
         <TrackInfo />
         <TimeSlider />

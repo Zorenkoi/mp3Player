@@ -1,12 +1,10 @@
 .playbar {
-  display: none;
-  position: fixed;
-  background-color: #9340fe;
-
-  width: 100vw;
-  left: 0;
-  bottom: 0;
+  width: 100%;
   padding: 15px 20px;
+  margin-top: auto;
+
+  display: none;
+  background-color: #9340fe;
 
   & > .togglePlay {
     transform: scale(120%) !important;

@@ -18,7 +18,7 @@ const Track = (track) => {
   const isCurrentTrack = currentTrack.id === id;
 
   return (
-    <div className={cn(s.track, isCurrentTrack && s.playing)}>
+    <div className={cn(s.track, isCurrentTrack && s.playing)} translate="no">
       <IconButtonHOC
         className={s.playButton}
         onClick={() => handleToggleAudio(track)}
@@ -33,10 +33,8 @@ const Track = (track) => {
         onClick={() => handleToggleAudio(track)}
       />
 
-      <div className={s.credits}>
-        <b>
-          <span onClick={() => handleToggleAudio(track)}>{title}</span>
-        </b>
+      <div onClick={() => handleToggleAudio(track)} className={s.credits}>
+        <b>{title}</b>
         <p>{artists}</p>
       </div>
 

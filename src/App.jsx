@@ -6,7 +6,7 @@ function App() {
   return (
     <div className={s.wrapper}>
       <MainPage />
-      <PlayBar />
+      {/* <PlayBar /> */}
     </div>
   );
 }
